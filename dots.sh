@@ -91,6 +91,7 @@ update() {
 
 # update dots(1) via git clone
 updatedots() {
+  exit
   echo "updating dots..."
   mkdir -p /tmp/dots \
     && cd /tmp/dots \
