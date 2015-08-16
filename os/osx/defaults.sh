@@ -20,19 +20,19 @@ echo "This script will make your Mac awesome"
 # General UI/UX
 ###############################################################################
 
-echo ""
-echo "Hide the Time Machine, Volume, User, and Bluetooth icons"
-for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
-  defaults write "${domain}" dontAutoLoad -array \
-    "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-    "/System/Library/CoreServices/Menu Extras/Volume.menu" \
-    "/System/Library/CoreServices/Menu Extras/User.menu"
+#echo ""
+#echo "Hide the Time Machine, Volume, User, and Bluetooth icons"
+#for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
+#  defaults write "${domain}" dontAutoLoad -array \
+#    "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
+#    "/System/Library/CoreServices/Menu Extras/Volume.menu" \
+#    "/System/Library/CoreServices/Menu Extras/User.menu"
 done
-defaults write com.apple.systemuiserver menuExtras -array \
-  "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
-  "/System/Library/CoreServices/Menu Extras/AirPort.menu" \
-  "/System/Library/CoreServices/Menu Extras/Battery.menu" \
-  "/System/Library/CoreServices/Menu Extras/Clock.menu"
+#defaults write com.apple.systemuiserver menuExtras -array \
+#  "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+#  "/System/Library/CoreServices/Menu Extras/AirPort.menu" \
+#  "/System/Library/CoreServices/Menu Extras/Battery.menu" \
+#  "/System/Library/CoreServices/Menu Extras/Clock.menu"
 
 echo ""
 echo "Disabling OS X Gate Keeper"
@@ -144,9 +144,9 @@ sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutio
 # Finder
 ###############################################################################
 
-echo ""
-echo "Showing icons for hard drives, servers, and removable media on the desktop"
-defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+#echo ""
+#echo "Showing icons for hard drives, servers, and removable media on the desktop"
+#defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 
 echo ""
 echo "Showing all filename extensions in Finder by default"
@@ -169,8 +169,8 @@ echo "Disabling the warning when changing a file extension"
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 echo ""
-echo "Use column view in all Finder windows by default"
-defaults write com.apple.finder FXPreferredViewStyle Clmv
+echo "Use list view in all Finder windows by default"
+defaults write com.apple.finder FXPreferredViewStyle Nlsv
 
 echo ""
 echo "Avoiding the creation of .DS_Store files on network volumes"
@@ -218,9 +218,9 @@ defaults write com.apple.dock autohide-time-modifier -float 0
 # Safari & WebKit
 ###############################################################################
 
-echo ""
-echo "Hiding Safari's bookmarks bar by default"
-defaults write com.apple.Safari ShowFavoritesBar -bool false
+#echo ""
+#echo "Hiding Safari's bookmarks bar by default"
+#defaults write com.apple.Safari ShowFavoritesBar -bool false
 
 echo ""
 echo "Hiding Safari's sidebar in Top Sites"
