@@ -15,18 +15,18 @@ export PATH=$HOME/Go/bin:$PATH
 
 # Set the Android Home
 # use: brew install android-sdk
-export ANDROID_HOME=/usr/local/opt/android-sdk
+#export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # JAVA HOME
-export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
+#export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
 
 # boot2docker goods
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/matt/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
+#export DOCKER_HOST=tcp://192.168.59.103:2376
+#export DOCKER_CERT_PATH=/Users/matt/.boot2docker/certs/boot2docker-vm
+#export DOCKER_TLS_VERIFY=1
 
 # $GOPATH
-export GOPATH=$HOME/Go
+#export GOPATH=$HOME/Go
 
 # Use atom for Ctrl+x+e
 EDITOR="subl"
@@ -36,9 +36,9 @@ EDITOR="subl"
 # }
 
 # Default cd path for interactive shells
-if test “${PS1+set}”; then
-  CDPATH=:"..:~:~/Projects";
-fi
+#if test “${PS1+set}”; then
+#  CDPATH=:"..:~:~/Projects";
+#fi
 
 # Add bash completion (for git and others)
 if [ -f `brew --prefix`/etc/bash_completion ]; then
@@ -154,7 +154,7 @@ eval "$(hub alias -s)"
 alias ls='ls --color=auto -hF'
 
 ## Display as a list, sorting by time modified
-alias ll='ls -1t'
+#alias ll='ls -1t'
 
 ## Display the insides of a particular directory
 alias lv='ls -R'
