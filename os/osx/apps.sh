@@ -8,11 +8,10 @@ set -eu
 # Apps
 apps=(
   shimo
-  1password
-  alfred
-  dropbox
+#  1password
+#  alfred
+#  dropbox
   google-chrome
-  qlcolorcode
   screenflick
   slack
   transmit
@@ -20,30 +19,30 @@ apps=(
   firefox
   hazel
   qlmarkdown
-  seil
-  spotify
+#  seil
+#  spotify
   vagrant
-  arq
-  flash
+#  arq
+#  flash
   iterm2
-  qlprettypatch
-  shiori
+#  qlprettypatch
+#  shiori
   sublime-text3
   virtualbox
   atom
-  flux
-  mailbox
-  qlstephen
-  sketch
-  tower
-  vlc
-  cloudup
-  nvalt
-  quicklook-json
-  skype
-  transmission
-  apikitchen
-  mamp
+#  flux
+#  mailbox
+#  qlstephen
+#  sketch
+#  tower
+#  vlc
+#  cloudup
+#  nvalt
+#  quicklook-json
+#  skype
+#  transmission
+#  apikitchen
+#  mamp
 )
 
 # fonts
